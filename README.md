@@ -10,6 +10,12 @@ This is a plan for Login-Chatting web app.
 - a user can login -> join a room
 - users can communicate real-time
 
+## To Run the Program
+- specify the .env file as .env-example
+- run "npm start" in both frontend and backend folder
+- then react frontend will start on the specified url+port (localhost)
+- direct to "url:port/login" to login or creat an account
+
 ## Tech Stacks
 #### Frontend
 - HTML/CSS/Javascript
@@ -91,11 +97,16 @@ This is a plan for Login-Chatting web app.
 #### Joining a Room Page
 - room number input field
 - join a room button
-#### Chatting Room
+#### Chatting Room Page
 - friend's chat on left side
 - my chat on right side
 - message preview bar (typed inputs)
 - message sending button
+
+## To Create DB
+- now running locally (or test with ngrok)
+- create .env to define details in db.ts
+- and connect db and the backend
 
 ## TODO Documenting:
 - ~~Documenting use story and tech stacks~~
@@ -104,8 +115,22 @@ This is a plan for Login-Chatting web app.
 - ~~database design~~
 - ~~pages for frontend~~
 
-## TOdO Coding:
+## TODO Coding:
+- Authentication
+    - JWT vs Session?
 - Frontend
+    - React, Typescript, HTML/CSS/BootStart
+    - ~~for pages and emit to server~~
+    - two client communication through backend (socket.io)
 - Backend
+    - ~~Node, Express, Typescript, RESTapi for server~~
+        - ~~maybe use ngrok for testing~~
+        - web hosting, cloud, after testing...
+    - ~~for res, rep~~
+    - ~~for defining dB~~
+    - ~~for communicating with dB~~
+    - ~~WebSocket vs Socket(io) for live-chatting~~
 - Database
-
+    - ~~MySQL~~
+    - run in a docker
+    - ~~run in a server later~~
